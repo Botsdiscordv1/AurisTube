@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YouTube</string>
+    <string name="error_not_installed">TizenTube Cobalt no esta instalado</string>
+    <string name="error_cannot_open">No se pudo abrir TizenTube Cobalt</string>
+
+    <string name="setup_title">AurisTube</string>
+    <string name="setup_missing">TizenTube Cobalt no esta instalado. Esta app hace que YouTube abra TizenTube Cobalt. Descargalo e instalalo para continuar.</string>
+    <string name="setup_installed">TizenTube Cobalt esta instalado.</string>
+    <string name="setup_open">Abrir TizenTube Cobalt</string>
+    <string name="setup_download">Descargar e instalar</string>
+    <string name="setup_searching">Buscando la ultima version...</string>
+    <string name="setup_search_failed">No se pudo encontrar la descarga. Comprueba la conexion.</string>
+    <string name="setup_downloading">Descargando TizenTube Cobalt...</string>
+    <string name="setup_download_failed">La descarga fallo.</string>
+    <string name="setup_installing">Abriendo el instalador...</string>
+    <string name="setup_allow_install">Activa "Instalar apps desconocidas" para YouTube y vuelve a esta pantalla.</string>
+</resources>
