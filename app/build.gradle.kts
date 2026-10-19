@@ -17,16 +17,13 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        // Suplanta el ID de paquete de la app oficial de YouTube TV para
-        // ocupar su hueco en el launcher de Android/Google TV.
-        applicationId = "com.google.android.youtube.tv"
+        // ID propio: instala sin root aunque YouTube TV venga preinstalado
+        // como app de sistema (su firma de Google impediria el spoof).
+        applicationId = "com.auristube.bridge"
         minSdk = 21
         targetSdk = 35
-        // Alto a proposito para superar el versionCode de la app oficial de
-        // YouTube TV (p.ej. 6.50.303 = 650303360; 7.x ~= 727300000) y evitar
-        // el rechazo por downgrade. Por debajo del techo de Play (2.1e9).
         versionCode = 2000000000
-        versionName = "1.0.1"
+        versionName = "1.0.2"
     }
 
     signingConfigs {

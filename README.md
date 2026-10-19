@@ -1,14 +1,14 @@
 # AurisTube
 
-Puente Android TV / Google TV que **suplanta el ID de paquete de la app oficial
-de YouTube TV** (`com.google.android.youtube.tv`) para ocupar su hueco en el
-launcher, y **reenvía** cualquier intent dirigido a "YouTube" hacia
+Puente Android TV / Google TV que ocupa el hueco de "YouTube" en el launcher con
+su paquete propio (`com.auristube.bridge`) y **reenvía** cualquier intent dirigido
+a "YouTube" hacia
 [TizenTube Cobalt](https://github.com/reisxd/TizenTubeCobalt).
 
 ## Qué hace
 
-- Se registra con el paquete `com.google.android.youtube.tv` (mosaico de YouTube
-  en el launcher, botón del mando, búsqueda por voz, tarjetas de la home).
+- Se instala con su propio paquete `com.auristube.bridge` (mosaico en el launcher,
+  búsqueda por voz, links de YouTube). No necesita root ni tocar la app oficial.
 - Reenvía links de YouTube (`youtube.com`, `youtu.be`, `youtube://`,
   `vnd.youtube:`) y acciones de búsqueda/reproducción a TizenTube Cobalt.
 - Si Cobalt no acepta el intent, abre su pantalla principal (leanback/main).
@@ -24,15 +24,16 @@ launcher, y **reenvía** cualquier intent dirigido a "YouTube" hacia
   "Continuar viendo"** propias. Para eso habría que reconstruir Cobalt, porque
   Android aísla las dos apps y el APK repackeado no puede registrar un puente
   JavaScript nuevo.
-- No convive con el YouTube TV oficial (mismo ID de paquete).
+- No ocupa el ID de paquete del YouTube TV oficial, así que el botón físico
+  "YouTube" del mando (que apunta a esa app) puede no abrir este puente.
 
 ## Requisitos
 
 - Android TV o Google TV (minSdk 21).
 - [TizenTube Cobalt](https://github.com/reisxd/TizenTubeCobalt) instalado con el
   paquete `io.gh.reisxd.tizentube.cobalt`.
-- Poder desinstalar/desactivar el YouTube TV oficial. Si es app de fábrica y el
-  sistema no permite quitarla sin root, el spoof no aplicará.
+- Opcional: desinstalar el YouTube TV oficial para que este puente sea el que
+  maneje los links de YouTube (no es obligatorio).
 
 ## Compilar
 

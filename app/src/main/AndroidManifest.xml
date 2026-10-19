@@ -79,10 +79,5 @@
             android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/Theme.AurisTubeSetup" />
-
-        <activity-alias
-            android:name="com.google.android.youtube.tv.MainActivity"
-            android:exported="true"
-            android:targetActivity="com.auristube.bridge.BridgeActivity" />
     </application>
 </manifest>
