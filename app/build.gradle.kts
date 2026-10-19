@@ -22,8 +22,11 @@ android {
         applicationId = "com.google.android.youtube.tv"
         minSdk = 21
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        // Alto a proposito para superar el versionCode de la app oficial de
+        // YouTube TV (p.ej. 6.50.303 = 650303360; 7.x ~= 727300000) y evitar
+        // el rechazo por downgrade. Por debajo del techo de Play (2.1e9).
+        versionCode = 2000000000
+        versionName = "1.0.1"
     }
 
     signingConfigs {
